@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6610f2;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 98%;
+  padding: 8px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #6610f2;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+.progress-bar {
+  background-color: #e0e0e0; /* Фон прогресс-бара */
+  border-radius: 5px; /* Закругленные углы */
+  height: 10px; /* Высота прогресс-бара */
+  margin-top: 10px; /* Отступ сверху */
+  overflow: hidden; /* Скрывает части прогресс-бара, выходящие за пределы */
+  position: relative; /* Позволяет позиционировать элементы внутри */
+}
+
+/* Стиль для самого прогресса */
+.progress {
+  background: linear-gradient(
+    90deg,
+    #4caf50,
+    #81c784
+  ); /* Градиент от зеленого к светло-зеленому */
+  height: 100%; /* Высота прогресса соответствует высоте контейнера */
+  transition: width 0.3s ease; /* Плавный переход при изменении ширины */
+}
+
+/* Для анимации при заполнении прогресс-бара */
+.progress-bar:before {
+  content: attr(data-progress) '%'; /* Показывает процент */
+  position: absolute; /* Позволяет расположить текст поверх */
+  left: 50%; /* Центрирует текст по горизонтали */
+  top: 50%; /* Центрирует текст по вертикали */
+  transform: translate(-50%, -50%); /* Выравнивание по центру */
+  color: white; /* Цвет текста */
+  font-weight: bold; /* Жирный шрифт */
+}
+
+.goal-list {
+  list-style-type: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем отступы */
+  margin: 20px 0; /* Добавляем отступы сверху и снизу */
+}
+
+.goal-item {
+  background-color: #f9f9f9; /* Светлый фон для элементов списка */
+  border: 1px solid #ddd; /* Легкая рамка */
+  border-radius: 5px; /* Закругленные углы */
+  padding: 15px; /* Внутренние отступы */
+  margin-bottom: 10px; /* Отступ между элементами списка */
+  transition: background-color 0.3s; /* Плавный переход фона */
+}
+
+.goal-item:hover {
+  background-color: #f1f1f1; /* Цвет фона при наведении */
+}
+
+.goal-item p {
+  margin: 0; /* Убираем отступы */
+  font-size: 16px; /* Размер шрифта */
+}
